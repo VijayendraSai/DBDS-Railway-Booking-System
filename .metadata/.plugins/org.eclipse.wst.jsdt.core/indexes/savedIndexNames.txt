@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+/Users/vijayendrasai/Documents/Study Materials/MS/527/Project/Project 2/DBDS-Railway-Booking-System/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3140770721.index
-624842441.index
-813526693.index
-2384786149.index
-3939697993.index
-323051175.index
-2705491248.index
