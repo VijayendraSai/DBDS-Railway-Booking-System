@@ -15,7 +15,7 @@ This project is a full-stack **relational database application** for managing an
 ## 🌐 Technologies Used
 
 - **Frontend**: React
-- **Backend**: SpringBoot
+- **Backend**: Spring Boot
 - **Database**: MySQL
 - **Web Server**: Apache Tomcat (localhost setup)
 
@@ -46,39 +46,39 @@ This project is a full-stack **relational database application** for managing an
 
 ## 🧾 Key Data Entities
 
-| Entity         | Attributes |
-|----------------|------------|
-| **Train**      | ID, transit line, stops, schedule |
-| **Station**    | ID, name, city, state |
-| **Schedule**   | Train ID, origin, destination, stops, fare, times |
+| Entity         | Attributes                                  |
+|----------------|---------------------------------------------|
+| **Train**      | ID, transit line, stops, schedule           |
+| **Station**    | ID, name, city, state                       |
+| **Schedule**   | Train ID, origin, destination, fare, times  |
 | **Reservation**| Reservation ID, fare, date, customer, train |
-| **Customer**   | Name, Email, Username, Password |
-| **Employee**   | SSN, Name, Role, Username, Password |
+| **Customer**   | Name, Email, Username, Password             |
+| **Employee**   | SSN, Name, Role, Username, Password         |
 
 ---
 
 ## 🧠 Features
 
 - Search train schedules by **origin/destination/date**
-- Real-time reservation with fare computation (discounts for seniors, children, disabled)
-- Controlled user access for **Admins**, **Reps**, and **Customers**
-- Multi-tier fare model with discounts and round-trip logic
-- Monthly revenue and usage reports
-- Forum-style query system for customers and reps
+- Real-time reservation with fare computation (including discounts for children, seniors, and disabled)
+- Role-based access control for **Admins**, **Representatives**, and **Customers**
+- Multi-tier fare logic with round-trip fare calculation
+- Monthly revenue analytics and usage reports
+- Built-in forum for customer support communication
 
 ---
 
 ## 🔐 User Credentials
 
-### Customer:
+### Customer
 - **Username**: `john`  
 - **Password**: `john`
 
-### Admin:
+### Admin
 - **Username**: `bob`  
 - **Password**: `bob`
 
-### Representative:
+### Representative
 - **Username**: `mark`  
 - **Password**: `mark`
 
@@ -88,31 +88,5 @@ This project is a full-stack **relational database application** for managing an
 
 ### 🔑 MySQL Database Credentials
 
-1. Navigate to:
-src/main/resources/application.properties
-
-
-2. Update the following lines:
-
-```properties
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
-
-3. Make sure MySQL and Tomcat servers are running locally.
-
-## ER Diagram & Schema Design
-
-- ER diagram: (Refer to the project's documentation folder)
-- Normalization: 3NF (No redundancy, fully normalized)
-- Foreign Keys used for customer-reservation, train-station, etc.
-- Integrity constraints (primary, foreign, unique) enforced in schema
-
-## Usage Instructions
-
-- Start MySQL server and import schema.
-- Deploy the project in Apache Tomcat (via Eclipse or IntelliJ).
-- Open your browser and go to:
-  - http://localhost:8080/railway-reservation-system/
-- Login as Customer, Admin, or Rep using the provided credentials.
-- Explore different functionalities from the dashboard.
+1. Navigate to the file:
 
