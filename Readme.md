@@ -100,14 +100,20 @@ spring.datasource.password=your_mysql_password
 
 3. Make sure MySQL and Tomcat servers are running locally.
 
-## 🗂️ **ER Diagram & Schema Design**
+---
 
-- ER diagram: (Refer to the project's documentation folder)
-- Normalization: 3NF (No redundancy, fully normalized)
-- Foreign Keys used for customer-reservation, train-station, etc.
-- Integrity constraints (primary, foreign, unique) enforced in schema
 
-## 🚦 **Usage Instructions**
+```markdown
+## 🗂️ ER Diagram & Schema Design
+
+- **ER Diagram**: (Refer to the project’s `documentation/` folder)
+- **Normalization**: 3NF (fully normalized to eliminate redundancy)
+- **Foreign Keys**: Used for customer-reservation, train-station, etc.
+- **Constraints**: Primary, foreign, and unique constraints are enforced
+
+---
+
+## 🚦 Usage Instructions
 
 - Start MySQL server and import schema.
 - Deploy the project in Apache Tomcat (via Eclipse or IntelliJ).
