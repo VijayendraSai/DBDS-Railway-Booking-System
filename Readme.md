@@ -90,35 +90,39 @@ This project is a full-stack **relational database application** for managing an
 
 1. Navigate to the file:
 
-src/main/resources/application.properties
+   ```
+   src/main/resources/application.properties
+   ```
 
-2. Update the following lines:
+2. Update the following lines with your MySQL credentials:
 
-```properties
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
+   ```properties
+   spring.datasource.username=your_mysql_username  
+   spring.datasource.password=your_mysql_password
+   ```
 
-3. Make sure MySQL and Tomcat servers are running locally.
+3. Make sure both **MySQL** and **Tomcat** servers are running locally.
 
 ---
 
-
-```markdown
 ## 🗂️ ER Diagram & Schema Design
 
-- **ER Diagram**: (Refer to the project’s `documentation/` folder)
-- **Normalization**: 3NF (fully normalized to eliminate redundancy)
-- **Foreign Keys**: Used for customer-reservation, train-station, etc.
-- **Constraints**: Primary, foreign, and unique constraints are enforced
+* **ER Diagram**: (Refer to the project’s `documentation/` folder)
+* **Normalization**: 3NF (fully normalized to eliminate redundancy)
+* **Foreign Keys**: Used for customer-reservation, train-station, etc.
+* **Constraints**: Primary, foreign, and unique constraints are enforced
 
 ---
 
 ## 🚦 Usage Instructions
 
-- Start MySQL server and import schema.
-- Deploy the project in Apache Tomcat (via Eclipse or IntelliJ).
-- Open your browser and go to:
-  - http://localhost:8080/railway-reservation-system/
-- Login as Customer, Admin, or Rep using the provided credentials.
-- Explore different functionalities from the dashboard.
+* Start MySQL server and import schema.
+* Deploy the project in Apache Tomcat (via Eclipse or IntelliJ).
+* Open your browser and go to:
+
+  ```
+  http://localhost:8080/railway-reservation-system/
+  ```
+* Login as Customer, Admin, or Rep using the provided credentials.
+* Explore different functionalities from the dashboard.
 
