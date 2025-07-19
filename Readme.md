@@ -90,3 +90,29 @@ This project is a full-stack **relational database application** for managing an
 
 1. Navigate to the file:
 
+src/main/resources/application.properties
+
+2. Update the following lines:
+
+```properties
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+
+3. Make sure MySQL and Tomcat servers are running locally.
+
+## 🗂️ **ER Diagram & Schema Design**
+
+- ER diagram: (Refer to the project's documentation folder)
+- Normalization: 3NF (No redundancy, fully normalized)
+- Foreign Keys used for customer-reservation, train-station, etc.
+- Integrity constraints (primary, foreign, unique) enforced in schema
+
+## 🚦 **Usage Instructions**
+
+- Start MySQL server and import schema.
+- Deploy the project in Apache Tomcat (via Eclipse or IntelliJ).
+- Open your browser and go to:
+  - http://localhost:8080/railway-reservation-system/
+- Login as Customer, Admin, or Rep using the provided credentials.
+- Explore different functionalities from the dashboard.
+
